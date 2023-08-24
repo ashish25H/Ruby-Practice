@@ -56,7 +56,7 @@ class Box
        @height
     end
     # make them private
-    private :getWidth, :getHeight
+    private  :getHeight
  
     # instance method to print area
     def printArea
@@ -69,7 +69,6 @@ class Box
  
  # create an object
  box = Box.new(10, 20)
- 
  # call instance methods
  a = box.getArea()
  puts "Area of the box is : #{a}"
