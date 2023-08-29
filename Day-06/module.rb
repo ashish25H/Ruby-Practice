@@ -8,7 +8,7 @@ module Tools
     end
 end
 
-include Tools
+# include Tools
 # Tools.say_name('tony')
 # Tools.say_hello
 # puts CONST
@@ -18,10 +18,12 @@ include Tools
 
 class Xyz
     @@name = 'class Name Xyz'
-include Tools
+# include Tools
+extend Tools
 end
 
 c = Xyz.new
+Xyz.say_hello
 c.say_hello
 # puts c::@@name
 c.say_name('tony')
