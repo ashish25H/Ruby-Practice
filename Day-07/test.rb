@@ -14,11 +14,12 @@ class TestUser
         getAge
     end
 
-    private
+    # private
     def say_name
         puts "Name : #@name"
     end
-
+    private :say_name
+    
     protected 
     def getAge
         puts "Age : #@age"
@@ -45,5 +46,8 @@ user2 = ActUser.new("Thor", 100, "USA")
 
 user2.getName
 user2.print_age
+# user2.say_name
+user2.getAge
+user2.getName
 # puts user1.getAge
 
